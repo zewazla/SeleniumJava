@@ -1,0 +1,25 @@
+Optimizing the code:
+
+1. code reusable
+2. easy to maintain the codes
+3. make it more object oriented programming
+
+Follow below hierarchy:
+
+1. main
+2. Test
+3. Action
+4. CssSelectors
+
+
+
+My projects loooks like this:
+
+1. create "main" folder in "java" folder : tworzymy folder główny, w którym będziemy zapisywali nasze testy
+2. create "mainTests" class in "main" folder: tutaj będą nasze testy
+3. create another folder "Test" in "java" folder
+4. create "testScenarios" in "Tests" folder
+5. create "Action" folder in "Tests" folder
+6. create "action" class in "Action" folder
+7. create "CssSelectors" folder in "Action" folder
+8. create "selectors" class in "CssSelectors" folder
