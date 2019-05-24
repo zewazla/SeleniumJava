@@ -1,6 +1,6 @@
-package Tests.Actions.CssSelectors;
+package tests.actions.cssSelectors;
 
-public class selectors {
+public class Selectors {
     public String email = "#identifierId";
 
     public String next = "#identifierNext";

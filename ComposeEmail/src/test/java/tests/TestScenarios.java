@@ -1,8 +1,8 @@
-package Tests;
+package tests;
 
-import Tests.Actions.action;
+import tests.actions.Actions;
 
-public class testScenarios extends action {
+public class TestScenarios extends Actions {
 
         public void gmailAutomate(){
             navigateURL("http://mail.google.com");

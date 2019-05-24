@@ -1,13 +1,19 @@
-package Tests.Actions;
+package tests.actions;
 
-import Tests.Actions.CssSelectors.selectors;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+import tests.actions.cssSelectors.Selectors;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.concurrent.TimeUnit;
 
-public class action extends selectors {
+public class Actions extends Selectors {
+
+
+
     WebDriver driver;
     public void navigateURL(String URL){
 
@@ -21,6 +27,8 @@ public class action extends selectors {
         //maximize window
         driver.manage().window().maximize();
     }
+
+
 
     public void waitDriverForGivenSeconds(int sec){
         //wait for element to load
