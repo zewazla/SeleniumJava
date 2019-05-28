@@ -33,7 +33,7 @@ public class action extends selectors {
 
         //click on next button
         driver.findElement(By.cssSelector(next)).click();
-    }
+}
 
     public void enterPassword(){
         //enter password
