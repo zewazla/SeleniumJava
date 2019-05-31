@@ -4,7 +4,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
@@ -32,6 +31,7 @@ public abstract class AbstractTest {
         // przejście na wskazaną stronę
         driver.get("http://automationpractice.com/index.php");
     }
+
 
 
 

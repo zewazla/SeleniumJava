@@ -1,8 +1,6 @@
 package selenium.test.project.tests;
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
-import selenium.test.project.pages.AddWomanPage;
 import selenium.test.project.pages.DashboardPage;
 import selenium.test.project.pages.WomanPage;
 
@@ -14,11 +12,6 @@ public class AddWomanPageTest extends AbstractTest {
         // Wejście w środowiska
         DashboardPage dashboardPage = new DashboardPage(driver);
         WomanPage womanPage = dashboardPage.goToWomanPage();
-
-
-
-
-
 
     }
 }

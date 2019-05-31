@@ -2,6 +2,7 @@ package selenium.test.project.pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.PageFactory;
 
 public abstract class AbstractPage {
 
@@ -10,9 +11,16 @@ public abstract class AbstractPage {
     public AbstractPage(WebDriver driver) {
         this.driver = driver;
 
+
+    }
+
+    public void fillField(WebElement element, String value){
+        element.clear();
+        element.sendKeys(value);
     }
 
     public void clickElement(WebElement element){
         element.click();
     }
+
 }
