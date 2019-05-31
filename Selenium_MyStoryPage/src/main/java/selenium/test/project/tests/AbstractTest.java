@@ -33,8 +33,6 @@ public abstract class AbstractTest {
     }
 
 
-
-
     @AfterSuite
     public void tearDownSuite() {
         //Zamknięcie przeglądarki
