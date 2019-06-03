@@ -21,4 +21,5 @@ public abstract class AbstractPage {
     public void clickElement(WebElement element){
     element.click();
     }
+
 }

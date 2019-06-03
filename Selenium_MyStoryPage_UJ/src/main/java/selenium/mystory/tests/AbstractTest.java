@@ -27,5 +27,9 @@ public class AbstractTest {
         driver.navigate().to("http://automationpractice.com/index.php");
     }
 
+    @AfterSuite
+    public void tearDownSuite(){
+        driver.quit();
+    }
 
 }
