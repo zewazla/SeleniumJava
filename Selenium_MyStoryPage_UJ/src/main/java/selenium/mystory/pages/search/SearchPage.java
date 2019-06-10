@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import selenium.mystory.pages.AbstractPage;
-import selenium.mystory.pages.DashboardPage;
+import selenium.mystory.pages.main.DashboardPage;
 
 public class SearchPage extends AbstractPage {
 

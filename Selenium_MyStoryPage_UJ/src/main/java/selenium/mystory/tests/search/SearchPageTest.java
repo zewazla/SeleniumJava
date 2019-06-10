@@ -2,7 +2,7 @@ package selenium.mystory.tests.search;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import selenium.mystory.pages.DashboardPage;
+import selenium.mystory.pages.main.DashboardPage;
 import selenium.mystory.pages.search.SearchPage;
 import selenium.mystory.tests.AbstractTest;
 

@@ -6,6 +6,7 @@
             <class name="selenium.mystory.tests.login.AddLoginPageTest"/>
             <class name="selenium.mystory.tests.newsletter.NewsletterTest"/>
             <class name="selenium.mystory.tests.contactUs.AddContactUsTest"/>
+            <class name="selenium.mystory.tests.search.SearchPageTest"/>
         </classes>
     </test>
 </suite>

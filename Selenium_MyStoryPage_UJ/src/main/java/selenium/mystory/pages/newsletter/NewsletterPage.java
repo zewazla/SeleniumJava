@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import selenium.mystory.pages.AbstractPage;
-import selenium.mystory.pages.DashboardPage;
+import selenium.mystory.pages.main.DashboardPage;
 
 public class NewsletterPage extends AbstractPage {
 
@@ -14,18 +14,18 @@ public class NewsletterPage extends AbstractPage {
     @FindBy(xpath = "/html/body/div/div[3]/footer/div/div[1]/div/form/div/button")
     private WebElement submitButton;
 
-    public NewsletterPage(WebDriver driver){
-    super(driver);
-}
-
-    public NewsletterPage fillNewsletterForm(String email){
-    fillField(emailField, email);
-    return this;
+    public NewsletterPage(WebDriver driver) {
+        super(driver);
     }
 
-    public DashboardPage submitNewsletterForm(){
-    clickElement(submitButton);
-    return new DashboardPage(driver);
+    public NewsletterPage fillNewsletterForm(String email) {
+        fillField(emailField, email);
+        return this;
+    }
+
+    public DashboardPage submitNewsletterForm() {
+        clickElement(submitButton);
+        return new DashboardPage(driver);
     }
 }
 

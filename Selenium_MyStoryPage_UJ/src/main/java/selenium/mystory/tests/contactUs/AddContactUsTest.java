@@ -1,7 +1,7 @@
 package selenium.mystory.tests.contactUs;
 
 import org.testng.annotations.Test;
-import selenium.mystory.pages.DashboardPage;
+import selenium.mystory.pages.main.DashboardPage;
 import selenium.mystory.pages.contactUs.AddContactUsPage;
 import selenium.mystory.pages.contactUs.ContactUsPage;
 import selenium.mystory.tests.AbstractTest;
@@ -9,7 +9,7 @@ import selenium.mystory.tests.AbstractTest;
 public class AddContactUsTest extends AbstractTest {
 
     @Test
-    public void successAddContactUsTest(){
+    public void successAddContactUsTest() {
         DashboardPage dashboardPage = new DashboardPage(driver);
         ContactUsPage contactUsPage = dashboardPage.goToContactUsPage();
         AddContactUsPage addContactUsPage = contactUsPage.goToContactUsPage();

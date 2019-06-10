@@ -1,8 +1,9 @@
-package selenium.mystory.pages;
+package selenium.mystory.pages.main;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import selenium.mystory.pages.AbstractPage;
 import selenium.mystory.pages.contactUs.ContactUsPage;
 import selenium.mystory.pages.login.LoginPage;
 
@@ -26,6 +27,9 @@ public class DashboardPage extends AbstractPage {
     @FindBy(xpath = "/html/body/div/div[2]/div/div[3]/div[2]/h1")
     private WebElement addInfoSearch;
 
+    @FindBy(xpath = "/html/body/div/div[1]/header/div[3]/div/div/div[3]/div/a")
+    private WebElement cartLink;
+
     public DashboardPage(WebDriver driver) {
         super(driver);
     }
@@ -40,7 +44,6 @@ public class DashboardPage extends AbstractPage {
         return new ContactUsPage(driver);
     }
 
-
     public boolean isInfoAddNewsletterDisplayed() {
         return addInfoNewsletter.isDisplayed();
     }
@@ -48,4 +51,5 @@ public class DashboardPage extends AbstractPage {
     public boolean isInfoSearchDisplayed() {
         return addInfoSearch.isDisplayed();
     }
+
 }
