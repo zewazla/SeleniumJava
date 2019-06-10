@@ -1,8 +1,9 @@
-package selenium.mystory.pages;
+package selenium.mystory.pages.login;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import selenium.mystory.pages.AbstractPage;
 
 public class AddLoginPage extends AbstractPage {
 

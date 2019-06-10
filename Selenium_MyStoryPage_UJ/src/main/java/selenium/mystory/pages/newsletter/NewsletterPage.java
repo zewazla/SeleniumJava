@@ -1,8 +1,10 @@
-package selenium.mystory.pages;
+package selenium.mystory.pages.newsletter;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import selenium.mystory.pages.AbstractPage;
+import selenium.mystory.pages.DashboardPage;
 
 public class NewsletterPage extends AbstractPage {
 
