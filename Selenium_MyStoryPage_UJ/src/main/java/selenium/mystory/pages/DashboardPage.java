@@ -17,21 +17,35 @@ public class DashboardPage extends AbstractPage {
     @FindBy(xpath = "/html/body/div/div[1]/header/div[2]/div/div/nav/div[2]/a")
     private WebElement contactUsLink;
 
-    public DashboardPage(WebDriver driver){
+    @FindBy(xpath = "/html/body/div/div[1]/header/div[3]/div/div/div[6]/ul/li[2]/a")
+    private WebElement newProductLink;
+
+    @FindBy(xpath = "/html/body/div/div[2]/div/div[3]/div[2]/ul/li[4]/div/div[1]/div/a[1]/img")
+    private WebElement dressesLink;
+
+    @FindBy(xpath = "/html/body/div/div[2]/div/div[3]/div[2]/h1")
+    private WebElement addInfoSearch;
+
+    public DashboardPage(WebDriver driver) {
         super(driver);
     }
 
-    public LoginPage goToLoginPage(){
-    clickElement(loginMenuLink);
-    return new LoginPage(driver);
+    public LoginPage goToLoginPage() {
+        clickElement(loginMenuLink);
+        return new LoginPage(driver);
     }
 
-    public ContactUsPage goToContactUsPage(){
+    public ContactUsPage goToContactUsPage() {
         clickElement(contactUsLink);
         return new ContactUsPage(driver);
-
     }
+
+
     public boolean isInfoAddNewsletterDisplayed() {
         return addInfoNewsletter.isDisplayed();
+    }
+
+    public boolean isInfoSearchDisplayed() {
+        return addInfoSearch.isDisplayed();
     }
 }
