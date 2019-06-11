@@ -11,7 +11,7 @@ import java.io.IOException;
 public class CustomScreenshot {
     public void makeScreenshot(WebDriver driver, String fileName){
         File screenshot =
-                ((TakesScreenshot)driver).getScreenshotAs(
+                ((TakesScreenshot) driver).getScreenshotAs(
                         OutputType.FILE
                 );
         try {

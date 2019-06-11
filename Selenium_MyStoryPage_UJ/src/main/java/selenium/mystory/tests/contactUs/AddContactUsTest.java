@@ -1,5 +1,6 @@
 package selenium.mystory.tests.contactUs;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import selenium.mystory.pages.main.DashboardPage;
 import selenium.mystory.pages.contactUs.AddContactUsPage;
@@ -15,6 +16,9 @@ public class AddContactUsTest extends AbstractTest {
         AddContactUsPage addContactUsPage = contactUsPage.goToContactUsPage();
         addContactUsPage = addContactUsPage.fillAddContactUsForm("tgq35996@cndps.com", "Write some text");
         contactUsPage = addContactUsPage.submitAddContactUsForm();
+
+
+        Assert.assertTrue(dashboardPage.isInfoSendMessageDisplayed());
     }
 }
 

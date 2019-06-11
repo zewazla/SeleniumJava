@@ -23,7 +23,7 @@ public class AddContactUsPage extends AbstractPage {
     private WebElement sendButton;
 
     public AddContactUsPage(WebDriver driver){
-        super((driver));
+        super(driver);
     }
 
     public AddContactUsPage fillAddContactUsForm(String email, String message){
@@ -33,6 +33,8 @@ public class AddContactUsPage extends AbstractPage {
     }
 
     public ContactUsPage submitAddContactUsForm(){
+        clickElement(subjectHeading);
+        clickElement(customerService);
         clickElement(sendButton);
         return new ContactUsPage(driver);
     }

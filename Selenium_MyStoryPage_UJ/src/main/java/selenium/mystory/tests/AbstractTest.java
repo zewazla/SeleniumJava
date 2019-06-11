@@ -17,6 +17,9 @@ public class AbstractTest {
     public static WebDriver driver;
     protected static CustomScreenshot customScreenshot;
 
+
+
+
     @BeforeSuite
     public void setUpSuite() {
 

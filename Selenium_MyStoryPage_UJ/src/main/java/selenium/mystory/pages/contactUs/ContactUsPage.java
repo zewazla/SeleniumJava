@@ -10,14 +10,18 @@ public class ContactUsPage extends AbstractPage {
     @FindBy(xpath = "/html/body/div/div[1]/header/div[2]/div/div/nav/div[2]/a")
     private WebElement addContactUsLink;
 
+    @FindBy(xpath = "/html/body/div/div[2]/div/div[3]/div/p")
+    private WebElement infoSendMessageBox;
+
     public ContactUsPage(WebDriver driver) {
-        super((driver));
+        super(driver);
     }
 
     public AddContactUsPage goToContactUsPage() {
         clickElement(addContactUsLink);
         return new AddContactUsPage(driver);
     }
+
 
 }
 

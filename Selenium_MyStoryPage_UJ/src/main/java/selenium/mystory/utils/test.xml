@@ -7,6 +7,7 @@
             <class name="selenium.mystory.tests.newsletter.NewsletterTest"/>
             <class name="selenium.mystory.tests.contactUs.AddContactUsTest"/>
             <class name="selenium.mystory.tests.search.SearchPageTest"/>
+            <class name="selenium.mystory.tests.addNewProductToCart.NewProductPageTest"/>
         </classes>
     </test>
 </suite>
