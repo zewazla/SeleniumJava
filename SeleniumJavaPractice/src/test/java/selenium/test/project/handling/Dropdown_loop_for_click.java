@@ -4,11 +4,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 
 public class Dropdown_loop_for_click {
 
     public static void main(String[] args) throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver","C:\\Users\\G\\Desktop\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","C:\\Users\\Lenovo\\Desktop\\chromedriver_win32\\chromedriver.exe");
         WebDriver driver =new ChromeDriver();
         driver.get("https://fly.pl/");
         driver.findElement(By.id("input-AD")).click();
@@ -21,17 +22,22 @@ public class Dropdown_loop_for_click {
 
         //create the loop for 3 click on website
 
-        int i = 1;
+        /*int i = 1;
         while(i<4){
              driver.findElement(By.xpath("//button[@class='plus']")).click(); //3 times
              i++;
-         }
+         }*/
 
-        driver.findElement(By.xpath("//button[@class='btn btn-fly btn-block bold']")).click();
+        for(int i = 1; i<5; i++){
+            driver.findElement(By.xpath("//button[@class='plus']")).click();
+        }
 
+        System.out.println(driver.findElement(By.id("input-AD")).getText());
 
-
-
+        Assert.assertEquals(driver.findElement(By.id("input-AD")).getText(), "6 dorośli\n" +
+                "DOROŚLI\n" +
+                "6\n" +
+                "WYBIERZ");
 
     }
 }
