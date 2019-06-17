@@ -3,9 +3,8 @@ package selenium.test.project.handling;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.Select;
 
-public class Dropdown_Dynamic_spicejetCom {
+public class Dropdown_Dynamic_ParentChild_spicejetCom {
 
     public static void main(String[] args) throws InterruptedException {
         System.setProperty("webdriver.chrome.driver","C:\\Users\\Lenovo\\Desktop\\chromedriver_win32\\chromedriver.exe");
@@ -20,7 +19,7 @@ public class Dropdown_Dynamic_spicejetCom {
 
         driver.findElement(By.xpath("//a[@value='BLR']")).click();
         Thread.sleep(2000);
-        driver.findElement(By.xpath("(//a[@value='MAA'])[2]")).click();
+        driver.findElement(By.xpath("//div[@id='glsctl00_mainContent_ddl_destinationStation1_CTNR'] //a[@value='MAA']")).click();
 
 
 

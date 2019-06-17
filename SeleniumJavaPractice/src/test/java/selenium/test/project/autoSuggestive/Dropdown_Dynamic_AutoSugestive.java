@@ -1,4 +1,4 @@
-package selenium.test.project.handling;
+package selenium.test.project.autoSuggestive;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
