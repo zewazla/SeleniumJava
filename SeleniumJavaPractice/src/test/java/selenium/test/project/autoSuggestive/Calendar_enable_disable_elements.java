@@ -11,9 +11,12 @@ public class Calendar_enable_disable_elements {
         WebDriver driver =new ChromeDriver();
         driver.get("https://www.spicejet.com/");
 
+
         System.out.println(driver.findElement(By.id("ctl00_mainContent_rbtnl_Trip_1")).isEnabled());
         driver.findElement(By.id("ctl00_mainContent_rbtnl_Trip_1")).click();
         System.out.println(driver.findElement(By.id("ctl00_mainContent_rbtnl_Trip_1")).isEnabled());
+
+
 
     }
 }
