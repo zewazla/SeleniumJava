@@ -1,4 +1,4 @@
-package selenium.test.project.practice;
+package selenium.test.project.xPath;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
